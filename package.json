@@ -6,15 +6,19 @@
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "knex": "node --no-warnings --loader tsx ./node_modules/.bin/knex",
-    "lint": "eslint src -e .ts --fix"
+    "lint": "eslint src -e .ts --fix",
+    "test": "vitest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.1.4",
+    "@types/supertest": "^2.0.12",
+    "supertest": "^6.3.3",
     "tsx": "^3.12.7",
-    "typescript": "^5.0.4"
+    "typescript": "^5.0.4",
+    "vitest": "^0.33.0"
   },
   "dependencies": {
     "@fastify/cookie": "^8.3.0",
